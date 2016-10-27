@@ -94,12 +94,7 @@ def main(args_str = None):
 
 
 
-#Usage:python --name <list of logical inetrface name> --physical_interfaces_id <list of physical interfaces id> --tenant_id <tenant_id> --config_node_ip <config node ip>
-#             --vcenter_vm_mac <vcenter vm mac> --vn_name <name of the vn to be created> --subnet <same subnet as vcenter port group> --vlan <vlan of the vcenter port group> 
-#             --auth_url <auth url:<http://openstack:5000/v2>> 
-#python lif.py --name p6p1.100 p514p2.100 --physical_interfaces_id 21fc448f-c17e-4efa-9385-bc0e5c1b9e68 c9dc3569-74b5-4f2e-9820-17d07c52f543 --tenant_id 623939f0f9204f93ac91ba4d0fce9142 
-#       --config_node_ip 10.204.216.15 --vcenter_vm_mac 00:50:56:a6:23:79 --vn_name vlan_100 --subnet 11.1.1.0/24 --vlan 100 --auth_url http://10.204.216.15:5000/v2
-
+#python lif_scale.py  --physical_interfaces_id da6b060e-5ce3-43d6-96b7-7ccab669776a d4db4030-e6e8-4032-baf0-38b74c27ad7f --tenant_id e30e213b-a046-4e4d-a198-98e0c55fb686 --config_node_ip 10.204.217.139 --start_mac 000029572113 --start_vn_name ixia_vlan_ --start_vlan   6 --number_of_vlan 4089 --auth_url http://10.204.217.144:5000/v2.0
 if __name__ == "__main__":
     main()
 
